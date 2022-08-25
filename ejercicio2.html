@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=prompt("Digite el primer numero");
+        let y=prompt("Digite el segundo numero");
+        let z=parseInt(x)+parseInt(y);
+
+        if(z<10){
+            let resp=document.createElement("h1");
+           let respuesta= resp.innerHTML=`tu suma es ${z} y es menor que 10`;
+            document.body.append(respuesta);
+        }else{
+            let resp=document.createElement("h1");
+           let respuesta= resp.innerHTML=`tu suma es${z} es mayor a 10`;
+            document.body.append(respuesta);
+        };
+
+
+    </script>
+</body>
+</html>

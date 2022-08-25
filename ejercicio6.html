@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    <script>
+            let num1=prompt("Digite el primer número");
+            let num2=prompt("Digite el segundo número");
+            let x=parseInt(num1);
+            let y=parseInt(num2);
+            
+            const aviso=document.createElement("h1");
+            document.body.append(aviso);
+
+            if(x===0 || y===0){
+                aviso.innerHTML="no es permitido";
+            }else{
+                if(x<y){
+                if(y%x===0){
+                    aviso.innerHTML="multiplo";
+                }else{
+                    aviso.innerHTML="no es multiplo"; 
+                }
+            }
+            if(x>y){
+                if(x%y===0){
+                    aviso.innerHTML="multiplo";
+                }else{
+                    aviso.innerHTML="no es multiplo"; 
+                }
+            }
+            }
+    </script>
+
+
+
+
+</body>
+</html>

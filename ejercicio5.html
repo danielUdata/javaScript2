@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pregunta=prompt("Escoge la figura: 1-Area del triangulo  2-Area del Cuadrado  3-Area del Circulo");
+        let x=parseInt(pregunta);
+        let res=document.createElement("h1");
+            document.body.append(res);
+
+        switch (x) {
+            case 1: 
+            let alt=prompt("Altura del triangulo");
+            let base=prompt("Base del triangulo");
+            let area=(parseFloat(alt)*parseFloat(base))/2;
+            res.innerHTML=`El area del triangulo es ${area}`;break;
+            case 2: 
+            let lado=prompt("Lado del cuadrado");
+            
+            let areaC=parseInt(lado)*parseInt(lado);
+            res.innerHTML=`El area del cuadrado es ${areaC}`;break;
+            case 3: 
+            let radio=prompt("Cual es el radio del circulo");
+            let diametro=parseInt(radio)*parseInt(radio);
+            let pii=parseInt(Math.PI);
+            
+            let areaCir=(diametro*pii);
+            res.innerHTML=`El area del triangulo es ${areaCir}`;break;
+            
+            default: res.innerHTML=`figura no encontrada`;break;
+
+        }
+    </script>
+</body>
+</html>
